@@ -49,4 +49,37 @@
   1. Determining entities
   2. Determining attributes
   3. Relationship among entities or relationship cardinality
-  4. If any many to many relationship heppen, we need to remove them any how.
+  4. Solving many to many
+
+### Covered topics in Module 16
+
+- Anomalies --> Anomalies in databases refer to inconsistencies or unexpected issues that can occur during data manipulation or retrieval.
+- There are 3 main types of anomalies
+  1. Update anomalies
+  2. Delete anomalies
+  3. Insert anomalies
+- Normalization is a technique of database design
+- Functional Dependency
+- Normal Forms
+- Types of Normal Forms
+  1. 0NF
+  2. 1NF
+  3. 2NF
+  4. 3NF
+- Transitive Dependency
+- Normalization can't remove the repetation of data, but can minimize the repetation of data
+- Junction/Intermediate table -> This table use for resolve many-to-many relationship
+- In remote server we can't use GUI software for DBMS, We need to use there terminal commands
+
+  #### PostgreSQL commands
+
+  - select version(); --> check postgres version
+  - \l --> show database list
+  - \c --> change database
+  - \d --> show table in database
+  - \dt --> By this command also we can check table
+  - \d+ --> By this command we can get details information about table
+  - create table table_name --> Use for create a new table
+  - \dn --> For see database schema
+  - Owner means a user who create the table
+  - \q --> For quite from psql
