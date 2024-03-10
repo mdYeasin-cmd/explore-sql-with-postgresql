@@ -83,3 +83,81 @@
   - \dn --> For see database schema
   - Owner means a user who create the table
   - \q --> For quite from psql
+  - \conninfo --> Use for check current session user
+  - \du --> By this command we can check databse user list
+
+### Covered topics in Module 17
+
+- "-u" by this flag we say the username for database server
+- Template database means blue print of create a new database
+- Postgres is not case-sensitive
+- By connection limit we can set, how many user can connect with a database
+- Attribute is collection of privileges
+- Best practice, we should give database access to user as less as possible
+- "\*" -> wild card, by this mean that select all
+- In postgres we can control user permission from granular level
+- We can add a user as a role of another user
+- PostgreSQL data types
+  1. Boolean
+  2. Number
+  3. Binary
+  4. Date/Time
+  5. Json
+  6. Character
+  7. UUID
+  8. Array
+  9. XML
+- Constraints - Constraint use for add extra validation on column
+
+  1.  Primary validation of a column is set data type for that column
+  2.  And then we can add more validation by using constraint
+
+- NOT NULL
+- UNIQUE
+- PRIMARY KEY
+- FORIGN KEY (REFERENCES)
+- DEFAULT
+- CHECK
+- Due to indexing query is faster then regular columns
+
+#### SQL commands
+
+##### User elements
+
+- create user user_name login encrypted password 'user_password';
+- create role role_name;
+- set role user_name;
+- select current_user, session_user;
+- grant all privileges on table_name to user_name;
+- grant select on table_name to user_name;
+- revoke select on table_name from user_name;
+
+##### Database elements
+
+- create database db_name;
+- create table table_name(
+  column1, datatype, constraint,
+  column2, datatype, constraint,
+  column3, datatype, constraint
+  );
+
+##### Insert data
+
+Single row insert
+
+- insert into table_name(column1, column2, column3) values(value1, value2, value3);
+
+Multi row insert
+
+- insert into table_name(column1, column2, column3)
+  values(value1, value2, value3), (value1, value2, value3), (value1, value2, value3);
+
+Without define columns
+
+- insert into table_name values(value1, value2, value3);
+- insert into table_name
+  values(value1, value2, value3), (value1, value2, value3), (value1, value2, value3);
+
+##### Select data
+
+- select \* from table_name;
