@@ -161,3 +161,44 @@ Without define columns
 ##### Select data
 
 - select \* from table_name;
+
+### Covered topics in Module 18
+
+- ALTER --> use for modify existing column structure
+- Actions of ALTER keyword are -->
+  1. Rename table
+  2. Modify data type of a column
+  3. Add/Drop column
+  4. Setting default value of a column
+  5. Rename a column
+  6. Add/Drop constraint for a column
+- NOT NULL and DEFAULT VALUE works for indivisual column
+- UNIQUE, PRIMARY KEY, FORIGN KEY --> Here we can pass multiple column
+- Some SELECT related methods are -->
+  1. SELECT
+  2. FROM
+  3. WHERE
+  4. ORDER
+  5. GROUP
+  6. HAVING
+  7. JOIN
+  8. DISTINCT
+  9. LIMIT
+  10. OFFSET
+  11. IN
+  12. LIKE --> case sensitive during perform operation
+  13. ILIKE --> non case sensitive during perform operation
+- "" --> Double quotation for column and '' --> Single quotation for row
+- Postgres funtion type
+  1. Scalar --> Perform operation on each row data
+  2. Aggregate --> Perform operation accross multiple rows, often with the GROUP BY clause
+- For complex query NOT keyword is useful
+- NULL is special in postgres. What operation we perform with NULL that doesn't matter, it always return NULL
+- COALESCE --> Return the first non-null value in a list
+- During database design we need to handle NULL value smartly.
+- Some special keyword
+  - n% --> Need to match from start
+  - %n --> Need to match from end
+  - \_\_\_n --> Need to match first three character
+  - \_\_n% --> Need to match first threed character and all last character doesn't matter
+- UPDATE, DELETE and DROP --> We should careful during run mentioned 3 commands
