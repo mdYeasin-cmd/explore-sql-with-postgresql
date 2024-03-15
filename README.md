@@ -202,3 +202,32 @@ Without define columns
   - \_\_\_n --> Need to match first three character
   - \_\_n% --> Need to match first threed character and all last character doesn't matter
 - UPDATE, DELETE and DROP --> We should careful during run mentioned 3 commands
+
+### Covered topics in Module 19
+
+- Date + Time + Time Zone = Timestamp
+- :: --> This sign use for type casting
+- Date is an essential element for any programming language
+- Postgres to_char fromat
+- INTERVAL in Postgres
+- In postgres, have a age function. Using the function we can figure out age by birth date and current date.
+- GROUP BY
+  - HAVING run for each group
+  - WHERE run for each row
+- In relational database, we make relation by using FORIGN KEY
+- Insertion constraint on INSERT post
+  - Attempting to insert a post with a user ID that does not exist
+  - Inserting a post with a valid user ID
+  - Attempting to insert a post without specifying a user ID
+- Deletion constraint on DELETE user
+  - Restrict Deletion -> ON DELETE RESTRICT / ON DELETE NO ACTION (default)
+  - Cascading Deletion -> ON DELETE CASCADE
+  - Setting NULL -> ON DELETE SET NULL
+  - Set Default value -> ON DELETE SET DEFAULT
+- Types of JOIN
+  - INNER JOIN
+  - LEFT JOIN
+  - RIGHT JOIN
+  - FULL JOIN
+  - CROSS JOIN
+  - NATURAL JOIN
