@@ -231,3 +231,33 @@ Without define columns
   - FULL JOIN
   - CROSS JOIN
   - NATURAL JOIN
+
+### Covered topics in Module 20
+
+- Subquery --> A subquery is a nested query within another SQL statement
+- Scalar subquery --> Which subquery return only one data
+- When we work with subquery, We need also think about main query. Is the subquery compatible with main query or not.
+- SELECT --> Subquery need only return single value
+- WHERE --> Subquery result depend on which comparison operator we use
+- FROM --> Must be compatible with outer query
+- VIEWS --> Views are virtural tables generated from the result of a SQL query
+- Purpose of SQL views -->
+  1. Simplifying complex queries
+  2. Improved security
+  3. Enhanced data abstraction
+- We can make a big query reuseable by using views.
+- Share any database information to user is a bad practice
+- Stored Procedure --> Stored precedure is a process where we can write SQL query imparatively for PostgreSQL, we use here plpgsql plugin
+- Trigger --> Trigger is a Database Object which run automatically depending a certain event.
+- ORM can handle trigger task more smart way
+- The purpose of indexing is making query faster
+- Sequential scan means --> scan every row
+- Indexing take extra storage for keep indexing information
+- Heap File --> In heap file data are store block way
+- Heap File --> Memory --> Query
+- We should not create index that table which update frequently
+- Indexing Algo
+  1. B-TREE(Default)
+  2. HASH
+  3. GIN
+  4. GIST
